@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fragment_me_appbar_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+<!--            app:toolbarId="@+id/fragment_me_toolbar"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginBottom="20dp"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/shape_avatar_bg">
+
+                        <ImageView
+                            android:id="@+id/fragment_me_avatar"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fragment_me_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/fragment_me_follower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:paddingHorizontal="5dp"
+                                android:background="@drawable/shape_tab_indicator" />
+
+                            <TextView
+                                android:id="@+id/fragment_me_follow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:textSize="11sp"
+                                android:paddingHorizontal="5dp"
+                                android:background="@drawable/shape_tab_indicator" />
+
+                            <TextView
+                                android:id="@+id/fragment_me_sex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:textSize="11sp"
+                                android:paddingHorizontal="5dp"
+                                android:background="@drawable/shape_tab_indicator" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp">
+
+                    <TextView
+                        android:id="@+id/fragment_me_desc"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_FFFFFF"/>
+
+                    <Button
+                        android:id="@+id/fragment_me_follow_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/shape_tab_indicator"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/fragment_me_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fragment_me_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            app:tabMode="scrollable"
+            app:tabIndicator="@drawable/shape_tab_indicator"
+            app:tabIndicatorColor="?android:attr/windowBackground"
+            app:tabIndicatorHeight="5dp"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabIndicatorFullWidth="false">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/fragment_me_tab_weibo" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_layout_corner"
+        android:paddingTop="20dp"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ceneax.app.hongmiao.widget.SwipeRefreshLoadMore.SwipeRefreshLoadMore
+            android:id="@+id/fragment_me_swipe_refresh_loadmore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_me_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ceneax.app.hongmiao.widget.SwipeRefreshLoadMore.SwipeRefreshLoadMore>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

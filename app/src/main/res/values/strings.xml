@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">宏渺</string>
+
+    <string name="not_login">你还没有登录呢！！快去登录吧！！</string>
+
+    <string name="activity_main_nav_menu_index">首页</string>
+    <string name="activity_main_nav_menu_message">消息</string>
+    <string name="activity_main_nav_menu_me">自己</string>
+
+    <string name="activity_login_title">登录</string>
+    <string name="activity_login_edit_user">手机号..</string>
+    <string name="activity_login_edit_pwd">密码..</string>
+    <string name="activity_login_bt_login">点我登录</string>
+    <string name="activity_login_fail_user_pwd_null">手机号和密码别忘了填啊！！</string>
+    <string name="activity_login_fail_text">登录失败啦！！错误信息：</string>
+
+    <string name="activity_weibo_detail_title">微博详情</string>
+    <string name="activity_weibo_detail_more_reply_bt_one">共</string>
+    <string name="activity_weibo_detail_more_reply_bt_two">条回复</string>
+    <string name="activity_weibo_detail_more_up_thumb">博主觉得这条评论很nice</string>
+
+    <string name="activity_profile_follow_bt_cancel">取消关注</string>
+    <string name="activity_profile_follow_bt_follow">关注</string>
+
+    <string name="fragment_index_tab_all">全部</string>
+    <string name="fragment_index_hot_search">热搜榜</string>
+    <string name="fragment_index_toolbar_menu_post">发微博</string>
+
+    <string name="fragment_me_tab_weibo">微博</string>
+    <string name="fragment_me_toolbar_menu_setting">设置</string>
+    <string name="fragment_me_sex_male">♂男</string>
+    <string name="fragment_me_sex_female">♀女</string>
+    <string name="fragment_me_sex_unknown">♂♀</string>
+    <string name="fragment_me_follower">粉丝</string>
+    <string name="fragment_me_follow">关注</string>
+    <string name="fragment_me_desc">简介：</string>
+
+    <string name="util_dialog_snack_bar_action">OJBK</string>
+    <string name="util_weibo_reg_full_text">&#8230;全文</string>
+
+    <string name="presenter_fragment_index_temp_get_weibo_fail">微博获取失败啦！！</string>
+    <string name="presenter_fragment_index_temp_get_weibo_none">没有获取到微博！！</string>
+    <string name="presenter_fragment_index_temp_get_weibo_none_more">没有获取到微博！！</string>
+
+    <string name="presenter_fragment_index_hot_word_fail">热搜榜获取失败啦！！</string>
+
+    <string name="presenter_common_get_profile_fail">用户信息获取失败啦！！</string>
+
+    <string name="presenter_activity_weibo_detail_get_comment_fail">评论好像获取失败啦！！</string>
+    <string name="presenter_activity_weibo_detail_get_comment_none">暂时没有人评论这条微博！！</string>
+    <string name="presenter_activity_weibo_detail_get_comment_none_more">评论到底啦！！</string>
+
+    <string name="presenter_reply_bottom_dialog_get_reply_fail">回复数据获取失败啦！！</string>
+    <string name="presenter_reply_bottom_dialog_get_reply_none">没有更多回复啦！！</string>
+
+    <string name="dialog_reply_bottom_title">回复详情</string>
+</resources>

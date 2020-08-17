@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">@drawable/layer_list_launch_splash</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="colorPrimary">@color/color_0418FF</item>
+        <item name="colorAccent">@color/color_516BFF</item>
+        <item name="android:windowBackground">@color/color_FFFFFF</item>
+
+        <item name="normalTextColor">@color/color_000000</item>
+        <item name="weiboRepostLayout">@color/color_EEEEEE</item>
+    </style>
+
+    <style name="AppTheme.Night" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="colorPrimary">@color/color_212121</item>
+        <item name="colorAccent">@color/color_323232</item>
+        <item name="android:windowBackground">@color/color_333333</item>
+
+        <item name="normalTextColor">@color/color_FFFFFF</item>
+        <item name="weiboRepostLayout">@color/color_444444</item>
+    </style>
+
+</resources>

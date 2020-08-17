@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity_main_nav_menu_index"
+        android:icon="@drawable/ic_activity_main_nav_index"
+        android:title="@string/activity_main_nav_menu_index" />
+
+    <item
+        android:id="@+id/activity_main_nav_menu_message"
+        android:icon="@drawable/ic_activity_main_nav_message"
+        android:title="@string/activity_main_nav_menu_message" />
+
+    <item
+        android:id="@+id/activity_main_nav_menu_me"
+        android:icon="@drawable/ic_activity_main_nav_me"
+        android:title="@string/activity_main_nav_menu_me" />
+
+</menu>

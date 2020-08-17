@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="CustomThemeAttribute">
+        <attr name="normalTextColor" format="color" />
+        <attr name="weiboRepostLayout" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseNineImagesLayoutLayout">
+        <attr name="spacing" format="dimension"/>
+    </declare-styleable>
+    
+</resources>
